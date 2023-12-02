@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" style="border-radius: 50%;">
+    <title>Sign Up - Spotify</title>
+
+    <link rel="stylesheet" href="signin.css">
+
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="">
+                <h1>Create Account</h1>
+                <span>Use your email for Registration</span>
+                <label for="name">
+                    <input type="text" placeholder="Name" id="name">
+                </label>
+                <label for="email">
+                    <input type="email" placeholder="E mail" id="email">
+                </label>
+                <label for="password">
+                    <input type="password" placeholder="Password" id="password">
+                </label>
+
+                <button>Sign Up</button>
+
+            </form>
+        </div>
+
+        <div class="form-container log-in-container">
+            <form action="">
+                <h1>Log In</h1>
+                <span>Use your email for LogIn</span>
+                
+                <label for="mail">
+                    <input type="email" placeholder="E mail" id="mail">
+                </label>
+                <label for="pssword">
+                    <input type="password" placeholder="Password" id="pssword">
+                </label>
+
+                <a class="forgot" href="#">Forgot your Password?</a>
+                <button><a href="#">Log In</a></button>
+
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info.</p>
+                    <button class="button" id="login">Log In</button>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter Your personal details and start journey with us.</p>
+                    <button class="button" id="signup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="signin.js"></script>
+</body>
+</html>

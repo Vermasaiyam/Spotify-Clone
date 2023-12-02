@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+body{
+    background-color: antiquewhite;
+    background-image: url("https://t4.ftcdn.net/jpg/05/15/77/39/360_F_515773972_IH759yGiOyAdQLtr2qdpMh71QVNely9C.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    font-family: 'ubuntu', 'sans-serif';
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+}
+
+.logoHead{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    padding: 0 0 5 8px;
+}
+
+.logoHead>a{
+    padding-left: 50px;
+    padding-top: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logoHead>a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0px;
+    background: 	#1DB954;
+    transition: all .5s;
+}
+.logoHead>a:hover::after{
+    width: 100%;
+}
+
+.logoHead div{
+    margin-left: 1100px;
+}
+.logoHead div button{
+    background-color: #1DB954;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 15px;
+    margin-right: 40px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.button a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.fixed{
+    height: 65px;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+.container{
+    height: 63.5vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 66%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/572/66/413/headphones-music-akg-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.songBanner{
+    height: 63.5vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    margin: 23px auto;
+    width: 24%;
+    border-radius: 12px;
+    padding: 34px 20px;
+}
+
+.SongInfo {
+    height: 95%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    /* font-size: 18px; */
+}
+
+.singer{
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+#movie{
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+
+.songitemcontainer{
+    margin-top: 35px;
+    height: 86%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+
+
+
+.bottom{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    margin-bottom: 20px;
+}
+.icons i{
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.progressBar{
+    padding-top: 20px;
+}
+input{
+    width: 40vw;
+    margin-bottom: 20px;
+    cursor:pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 50px;
+    margin: 0 23px;
+    border-radius: 50%;
+}
+
+.timestamp{
+    padding: 0 10px;
+}
+.songItemPlay{
+    cursor: pointer;
+    padding-right: 20px;
+}
+.songLiked{
+    cursor: pointer;;
+    padding-right: 20px;
+}
+
+.songInfo{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    left: 6vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}

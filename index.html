@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" style="border-radius: 50%;">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logoHead">
+                <img class="logo" src="https://developer.spotify.com/images/guidelines/design/icon3@2x.png"
+                    alt="Spotify">
+                <h2>Spotify</h2>
+                <a href="#"><i class="fa-solid fa-house" style="color: #fafcff;"></i></a>
+                <a href="./likedSongs.html"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i></a>
+                <div id="buttons">
+                    <button class="signup button" id="signup"><a href="signin.html">Sign Up</a></button>
+                    <button class="login button" id="login"><a href="signin.html">Login</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="fixed"></div>
+    <div class="mid">
+
+        <div class="container">
+            <div class="songList">
+                <h1>Songs of the Era</h1>
+                <div class="songitemcontainer">
+                    <div class="songItem">
+                        <img src="" alt="1">
+                        <span class="songName"></span>
+                        <span class="songListPlay"><span class="timestamp"> </span> <i id="0"
+                                class="fa-solid songItemPlay fa-circle-play"></i>
+                            <i id="0" class="fa-regular songLiked fa-heart" style="color: #000000;"></i></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="" alt="2">
+                        <span class="songName"></span>
+                        <span class="songListPlay"><span class="timestamp"></span><i id="1"
+                                class="fa-solid songItemPlay fa-circle-play"></i>
+                            <i id="1" class="fa-regular songLiked fa-heart" style="color: #000000;"></i></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="" alt="3">
+                        <span class="songName"></span>
+                        <span class="songListPlay"><span class="timestamp"> </span> <i id="2"
+                                class="fa-solid songItemPlay fa-circle-play"></i>
+                            <i id="2" class="fa-regular songLiked fa-heart" style="color: #000000;"></i></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="" alt="4">
+                        <span class="songName"></span>
+                        <span class="songListPlay"><span class="timestamp"> </span> <i id="3"
+                                class="fa-solid songItemPlay fa-circle-play"></i>
+                            <i id="3" class="fa-regular songLiked fa-heart" style="color: #000000;"></i></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="" alt="5">
+                        <span class="songName"></span>
+                        <span class="songListPlay"><span class="timestamp"> </span>
+                            <i id="4" class="fa-solid songItemPlay fa-circle-play"></i>
+                            <i id="4" class="fa-regular songLiked fa-heart" style="color: #000000;"></i></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="" alt="6">
+                        <span class="songName"></span>
+                        <span class="songListPlay"><span class="timestamp"> </span> <i id="5"
+                                class="fa-solid songItemPlay fa-circle-play"></i>
+                            <i id="5" class="fa-regular songLiked fa-heart" style="color: #000000;"></i></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="" alt="7">
+                        <span class="songName"></span>
+                        <span class="songListPlay"><span class="timestamp"> </span> <i id="6"
+                                class="fa-solid songItemPlay fa-circle-play"></i>
+                            <i id="6" class="fa-regular songLiked fa-heart" style="color: #000000;"></i></span>
+                    </div>
+                    <div class="songItem">
+                        <img src="" alt="8">
+                        <span class="songName"></span>
+                        <span class="songListPlay"><span class="timestamp"> </span> <i id="7"
+                                class="fa-solid songItemPlay fa-circle-play"></i>
+                            <i id="7" class="fa-regular songLiked fa-heart" style="color: #000000;"></i></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="songBanner">
+            <center>
+                <marquee id="marquee" behavior="scroll" direction="left" style="font-size: 25px;">KALAASTAR - Honey 3.0 - Yo Yo
+                    Honey Singh</marquee>
+            </center>
+            <div class="SongInfo">
+                <center><img src="./Covers/1.jpg" alt="Song Image" width="90%" height="65%" style="padding-top: 20px; padding-bottom: 20px;" class="songBannerImage"></center>
+                <h3 style="font-size: 20px; padding-bottom: 10px;">Singer Name :- <span class="singer">Yo Yo Honey Singh</span></h3>
+                <h3 style="font-size: 20px; padding-bottom: 10px;">Movie Name :- <span id="movie">N/A</span></h3>
+
+            </div>
+    </div>
+
+    </div>
+
+    <div class="bottom">
+        <div class="icons">
+            <i class="fa-solid fa-2x fa-backward-step" id="previous"></i>
+            <i class="fa-solid fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-forward-step" id="next"></i>
+        </div>
+        <div class="progressBar">
+            <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0"><span
+                class="masterCurrentTime"> </span>
+        </div>
+        <div class="songInfo">
+            <img src="https://raw.githubusercontent.com/Taishi-Y/MusicIndicator/master/art/circlenormal.gif" alt=""
+                width="100px" id="gif"> <span id="masterSongName">KALAASTAR - Honey 3.0 - Yo Yo
+                Honey Singh</span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/09e0fb677b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

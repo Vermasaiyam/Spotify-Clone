@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked Songs - Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" style="border-radius: 50%;">
+
+    <style>
+        body {
+            background-image: url("https://t4.ftcdn.net/jpg/05/15/77/39/360_F_515773972_IH759yGiOyAdQLtr2qdpMh71QVNely9C.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .liked {
+            padding-top: 70px;
+        }
+
+        .LikedSongs {
+            height: 63.5vh;
+            background-color: black;
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.25);
+            margin: 20px auto;
+            width: 24%;
+            border-radius: 12px;
+            padding: 30px 20px;
+        }
+
+        .LikedSongs a i {
+            float: right;
+            margin-right: 10px;
+        }
+
+        .likedSongList {
+            height: 85%;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            overflow-x: hidden;
+            font-size: 18px;
+        }
+
+        .likedImage {
+            width: 50px;
+            margin: 0 23px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="liked">
+        <div class="LikedSongs">
+            <a href="./index.html"><i class="fa-solid  fa-xmark" style="color: #ffffff;"></i></a>
+            <center>
+                <h1 style="padding-bottom: 30px;">Liked Songs</h1>
+            </center>
+            <div class="likedSongList">
+                <table class="table">
+                    <tbody id="tablebody">
+                        <tr>
+                            <th></th>
+                            <td><img src="" class="likedImage"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
