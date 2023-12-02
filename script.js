@@ -3,7 +3,7 @@ console.log("Welcome");
 //Initialize the variables
 let songIndex = 0;
 let progress = 0;
-let audioElement = new Audio('Songs/song1.mp3');
+let audioElement = new Audio('song1.mp3');
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
@@ -17,14 +17,14 @@ let singer = document.getElementsByClassName("singer")[0];
 let movie = document.getElementById("movie");
 
 let songs = [
-    { songName: 'KALAASTAR - Honey 3.0 - Yo Yo Honey Singh', filePath: 'Songs/song1.mp3', coverPath: 'Covers/1.jpg', singer: "Yo Yo Honey Sngh", movie: "N/A" },
-    { songName: 'Tujhe Kitna Chahne Lage - Kabir Singh', filePath: 'Songs/song2.mp3', coverPath: 'Covers/2.jpg', singer: "Mithoon Feat. Arijit Singh", movie: "Kabir Singh" },
-    { songName: 'Kaun Tujhe - M.S. Dhoni - The Untold Story', filePath: 'Songs/song3.mp3', coverPath: 'Covers/3.jpg', singer: "Palak Muchhal, Amaal Mallik", movie: "M.S. Dhoni - The Untold Story" },
-    { songName: 'Jab Tak - M.S. Dhoni - The Untold Story', filePath: 'Songs/song4.mp3', coverPath: 'Covers/4.jpg', singer: "Armaan Malik", movie: "M.S. Dhoni - The Untold Story" },
-    { songName: 'Shayad - Love Aaj Kal', filePath: 'Songs/song5.mp3', coverPath: 'Covers/5.jpg', singer: "Arijit Singh, Pritam Chakraborty, Madhubanti Bagchi", movie: "Love Aaj Kal" },
-    { songName: 'Dil Sambhal Ja Jara - Murder 2', filePath: 'Songs/song6.mp3', coverPath: 'Covers/6.jpeg', singer: "Arijit Singh", movie: "Murder 2" },
-    { songName: 'Aankhon Se Batana Reply - Swati Mishra', filePath: 'Songs/song7.mp3', coverPath: 'Covers/7.jpeg', singer: "Swati Mishra", movie: "N/A" },
-    { songName: 'Bekhayali - Kabir Singh', filePath: 'Songs/song8.mp3', coverPath: 'Covers/8.jpeg', singer: "Sachet Tandon", movie: "Kabir Singh" }
+    { songName: 'KALAASTAR - Honey 3.0 - Yo Yo Honey Singh', filePath: 'song1.mp3', coverPath: '1.jpg', singer: "Yo Yo Honey Sngh", movie: "N/A" },
+    { songName: 'Tujhe Kitna Chahne Lage - Kabir Singh', filePath: 'song2.mp3', coverPath: '2.jpg', singer: "Mithoon Feat. Arijit Singh", movie: "Kabir Singh" },
+    { songName: 'Kaun Tujhe - M.S. Dhoni - The Untold Story', filePath: 'song3.mp3', coverPath: '3.jpg', singer: "Palak Muchhal, Amaal Mallik", movie: "M.S. Dhoni - The Untold Story" },
+    { songName: 'Jab Tak - M.S. Dhoni - The Untold Story', filePath: 'song4.mp3', coverPath: '4.jpg', singer: "Armaan Malik", movie: "M.S. Dhoni - The Untold Story" },
+    { songName: 'Shayad - Love Aaj Kal', filePath: 'song5.mp3', coverPath: '5.jpg', singer: "Arijit Singh, Pritam Chakraborty, Madhubanti Bagchi", movie: "Love Aaj Kal" },
+    { songName: 'Dil Sambhal Ja Jara - Murder 2', filePath: 'song6.mp3', coverPath: '6.jpeg', singer: "Arijit Singh", movie: "Murder 2" },
+    { songName: 'Aankhon Se Batana Reply - Swati Mishra', filePath: 'song7.mp3', coverPath: '7.jpeg', singer: "Swati Mishra", movie: "N/A" },
+    { songName: 'Bekhayali - Kabir Singh', filePath: 'song8.mp3', coverPath: '8.jpeg', singer: "Sachet Tandon", movie: "Kabir Singh" }
 ]
 
 songItems.forEach((element, i) => {
