@@ -72,7 +72,7 @@ audioElement.addEventListener('timeupdate', () => {
         else {
             songIndex = 0;
         }
-        audioElement.src = `Songs/song${songIndex + 1}.mp3`;
+        audioElement.src = `song${songIndex + 1}.mp3`;
         makeAllPlays();
         audioElement.play();
         document.getElementsByClassName('songItemPlay')[songIndex].classList.remove('fa-circle-play');
@@ -106,7 +106,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
         if (audioElement.paused || audioElement.currentTime <= 0) {
             audioElement.currentTime = 0;
             songIndex = parseInt(e.target.id)
-            audioElement.src = `Songs/song${songIndex + 1}.mp3`;
+            audioElement.src = `song${songIndex + 1}.mp3`;
             masterSongName.innerText = songs[songIndex].songName;
             makeAllPlays();
             audioElement.play();
@@ -140,7 +140,7 @@ document.getElementById('next').addEventListener('click', () => {
     else {
         songIndex += 1;
     }
-    audioElement.src = `Songs/song${songIndex + 1}.mp3`;
+    audioElement.src = `song${songIndex + 1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -165,7 +165,7 @@ document.getElementById('previous').addEventListener('click', () => {
     else {
         songIndex -= 1;
     }
-    audioElement.src = `Songs/song${songIndex + 1}.mp3`;
+    audioElement.src = `song${songIndex + 1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
