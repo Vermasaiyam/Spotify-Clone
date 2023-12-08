@@ -17,14 +17,29 @@
                 <img class="logo" src="https://developer.spotify.com/images/guidelines/design/icon3@2x.png"
                     alt="Spotify">
                 <h2>Spotify</h2>
-                <a href="#"><i class="fa-solid fa-house" style="color: #fafcff;"></i></a>
-                <a href="likedSongs.html"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></a>
-                <a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i></a>
-                <div id="buttons">
-                    <button class="signup button" id="signup"><a href="signin.html">Sign Up</a></button>
-                    <button class="login button" id="login"><a href="signin.html">Login</a></button>
-                </div>
             </div>
+            
+            <div id="buttons">
+                <a href="#"><i class="fa-solid fa-house" style="color: #fafcff;"></i></a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <table class="liked-song" style="z-index: 10;">
+                            <tr>
+                                <th></th>
+                                <th><img class="img" src="" style="width: 50px; border-radius: 50%; margin: 0 23px;"></th>
+                                <th></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i></a>
+                <button class="signup button" id="signup"><a href="signin.html">Sign Up</a></button>
+                <!-- <button class="login button" id="login"><a href="signin.html">Login</a></button> -->
+            </div>
+
         </div>
     </nav>
     <div class="fixed"></div>
