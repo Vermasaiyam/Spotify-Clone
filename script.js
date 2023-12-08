@@ -203,37 +203,31 @@ Array.from(document.getElementsByClassName("songLiked")).forEach((element) => {
 
         else {
             itemJsonArraystr = localStorage.getItem('itemsJson');
+            // console.log(itemJsonArraystr)
             itemJsonArray = JSON.parse(itemJsonArraystr);
+            let entry = JSON.stringify([likedSongName, likedSongPath, likedSongCover]);
+            if (itemJsonArraystr.includes(entry)){
+                // e.target.classList.remove("fa-solid");
+                // e.target.classList.add("fa-regular");
+                alert("Already added!!!");
+                return;
+            }
             itemJsonArray.push([likedSongName, likedSongPath, likedSongCover]);
             localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
-            // console.log(itemJsonArray.length)
-            for (i = 0; i < itemJsonArray.length; i++) {
-                if ([likedSongName, likedSongPath, likedSongCover] == itemJsonArray[i]) {
-                    itemJsonArray.pop();
-                    alert("Song Repeated");
-                    return;
-                }
-                else {
-                    itemJsonArray.push([likedSongName, likedSongPath, likedSongCover]);
-                }
-                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
-            }
-
-
         }
 
+        // console.log(itemJsonArray)
 
         //populate the playlist
-        tableBody = document.getElementById("tablebody");
+        tableBody = document.getElementsByClassName("liked-song")[0];
         let str = "";
         itemJsonArray.forEach((element, index) => {
             str += `
-            <tr>
-                    <th>${index + 1}.</th>
-                    <td><img src="${element[2]}" class="likedImage"></td>
-                    <td>${element[0]}</td>
-                    <td><i id="${index}" class="fa-solid songItemPlay fa-circle-play"></i></td>
-            </tr>`
+                <tr>
+                    <th>${index+1}.)</th>
+                    <th><img class="img" src="${element[2]}" style="width: 50px; border-radius: 50%; margin: 0 23px;"></th>
+                    <th>${element[0]}</th>
+                </tr>`
         })
         tableBody.innerHTML = str;
     })
