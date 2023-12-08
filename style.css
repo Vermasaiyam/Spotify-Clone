@@ -4,7 +4,7 @@ body{
     background-color: antiquewhite;
     background-image: url("https://t4.ftcdn.net/jpg/05/15/77/39/360_F_515773972_IH759yGiOyAdQLtr2qdpMh71QVNely9C.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
 }
 *{
     margin: 0;
@@ -133,11 +133,12 @@ body{
 }
 .mid{
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding-top: 8px;
+    margin: auto auto;
 }
 .container{
-    height: 63.5vh;
+    height: calc(100vh - 80px - 120px - 100px);
     background-color: black;
     color: white;
     font-family: 'Varela Round', sans-serif;
@@ -151,7 +152,7 @@ body{
     background-size: cover;
 }
 .songBanner{
-    height: 63.5vh;
+    height: calc(100vh - 80px - 120px - 100px);
     background-color: black;
     color: white;
     font-family: 'Varela Round', sans-serif;
