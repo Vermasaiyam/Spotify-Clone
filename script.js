@@ -24,7 +24,14 @@ let songs = [
     { songName: 'Shayad - Love Aaj Kal', filePath: 'song5.mp3', coverPath: '5.jpg', singer: "Arijit Singh, Pritam Chakraborty, Madhubanti Bagchi", movie: "Love Aaj Kal" },
     { songName: 'Dil Sambhal Ja Jara - Murder 2', filePath: 'song6.mp3', coverPath: '6.jpeg', singer: "Arijit Singh", movie: "Murder 2" },
     { songName: 'Aankhon Se Batana Reply - Swati Mishra', filePath: 'song7.mp3', coverPath: '7.jpeg', singer: "Swati Mishra", movie: "N/A" },
-    { songName: 'Bekhayali - Kabir Singh', filePath: 'song8.mp3', coverPath: '8.jpeg', singer: "Sachet Tandon", movie: "Kabir Singh" }
+    { songName: 'Bekhayali - Kabir Singh', filePath: 'song8.mp3', coverPath: '8.jpeg', singer: "Sachet Tandon", movie: "Kabir Singh" },
+    { songName: 'Tere Jaane Se - Anurag Vashisht', filePath: 'song9.mp3', coverPath: '9.jpg', singer: "Anurag Vashisht", movie: "N/A" },
+    { songName: 'Ek Raat - Vilen', filePath: 'song10.mp3', coverPath: '10.jpeg', singer: "Vilen", movie: "N/A" },
+    { songName: 'Faasle - Aditya Rikhari', filePath: 'song11.mp3', coverPath: '11.jpg', singer: "Aditya Rikhari", movie: "N/A" },
+    { songName: 'Sach Keh Raha Hai Deewana - Mayank Maurya', filePath: 'song12.mp3', coverPath: '12.jpeg', singer: "Mayank Maurya", movie: "Rehna Hai Tere Dil Mein" },
+    { songName: 'Baarishein - Anuv Jain', filePath: 'song13.mp3', coverPath: '13.jpg', singer: "Anuv Jain", movie: "N/A" },
+    { songName: 'Chidiya - Vilen', filePath: 'song14.mp3', coverPath: '14.jpg', singer: "Vilen", movie: "N/A" },
+    { songName: 'Uska Hi Banana - Arijit Singh', filePath: 'song15.mp3', coverPath: '15.jpg', singer: "Arijit Singh", movie: "1920 Evil Returns" },
 ]
 
 songItems.forEach((element, i) => {
