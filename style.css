@@ -213,7 +213,11 @@ body{
 }
 .icons i{
     cursor: pointer;
-    padding-right: 15px;
+    padding: 0px 13px;
+    transform: scale(1.1);
+}
+#masterPlay{
+    transform: scale(1.25);
 }
 
 .progressBar{
