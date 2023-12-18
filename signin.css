@@ -3,7 +3,9 @@
 }
 
 body{
-    background-image: url("https://t4.ftcdn.net/jpg/05/15/77/39/360_F_515773972_IH759yGiOyAdQLtr2qdpMh71QVNely9C.jpg");
+    /* background-image: url("https://t4.ftcdn.net/jpg/05/15/77/39/360_F_515773972_IH759yGiOyAdQLtr2qdpMh71QVNely9C.jpg"); */
+    
+    background: rgba(0, 0, 0, 0.613);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
