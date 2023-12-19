@@ -143,18 +143,19 @@ body{
 }
 .container{
     height: calc(100vh - 80px - 120px - 100px);
+    margin: 23px auto;
+    width: 66%;
+    border-radius: 12px;
+    width: 66vw;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.652);
     background-color: black;
     color: white;
     font-family: 'Varela Round', sans-serif;
     display: flex;
-    margin: 23px auto;
-    width: 66%;
-    border-radius: 12px;
     padding: 34px;
     background-image: url('https://p4.wallpaperbetter.com/wallpaper/572/66/413/headphones-music-akg-wallpaper-preview.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.652);
 }
 .songBanner{
     height: calc(100vh - 80px - 120px - 100px);
