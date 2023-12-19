@@ -22,6 +22,7 @@ body{
     background-color: black;
     color: white;
     position: fixed;
+    overflow: hidden;
 }
 
 .logoHead{
